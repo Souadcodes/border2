@@ -1,0 +1,101 @@
+ 
+ .body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+ }
+ .border{
+    display: flex;
+ }
+ 
+.border div{
+    height: 100px;
+    width: 200px;
+    background-color: #eee;
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+     display: flex;
+     justify-content: center;
+    align-items: center;
+   
+    
+ 
+}
+.one{
+   
+ border: 10px solid red; 
+ outline: 10px solid black;
+
+}
+.two{
+ border-top: 10px solid blue;
+ border-bottom: 10px solid blue;
+ border-right: 10px solid green;
+ border-left: 10px solid green;
+ outline: 10px solid black;
+
+}
+.three{
+   
+ border-right: 10px dashed green; 
+ border-left: 10px dashed yellow; 
+ border-top: 10px dashed red; 
+ border-bottom: 10px dashed blue; 
+ outline: 10px solid black;
+
+}
+
+/* another practice */
+
+.border2{
+  display: flex;  
+flex-direction: column;
+}
+.border2 div{
+    justify-content: center;
+  align-content: center;
+    width: 400px;
+    height: 50px;
+    background-color: #eee;
+    margin: 10px;
+ 
+    
+
+}
+
+.element-1 {
+    position: relative;
+    padding: 10px 10px 10px 20px;
+}
+
+.element-1::before {
+    content: "";
+    position: absolute;
+    top: 10px;   /* space from top */
+    bottom: 10px; /* space from bottom */
+    left: 10px;
+    width: 5px; /* border thickness */
+    background: rgb(209, 67, 91);
+}
+.element-2{
+visibility: hidden;
+   
+}
+.element-3 {
+    position: relative;
+    padding: 10px 10px 10px 20px;
+
+}
+
+.element-3::before {
+    content: "";
+    position: absolute;
+    top: 10px;   /* space from top */
+    bottom: 10px; /* space from bottom */
+    left: 10px;
+    width: 5px; /* border thickness */
+    background: rgb(45, 157, 202);
+
+}
+   
